@@ -1,0 +1,19 @@
+package main
+
+import (
+	"fmt"
+)
+
+type person struct {
+	first string
+	last  string
+}
+
+func main() {
+	p1 := person{"Dominic", "Walls"}
+	p2 := person{"Wiz", "Khalifa"}
+	xp := []person{}
+	xp = append(xp, p1)
+	xp = append(xp, p2)
+	fmt.Pritnln(xp)
+} 
